@@ -10,4 +10,6 @@
 - 도커엔진은 리눅스 운영체제 기반으로 돌아가는데 리눅스 커널이 제공해주는 cgroupfs 드라이버를 사용한다. 쿠버네티스에서 권장하는 cgroup driver는 systemd 이므로 클러스터 init이 안되는 에러가 발생했다.
 
 -------------------------
-### 해결방법 
+### 해결방법
+도커의 기본 cgroup driver를 systemd로 변경해주면 된다.
+![image](https://user-images.githubusercontent.com/58390757/116781598-d640a100-aabe-11eb-9efc-d76d2e16c98a.png)
