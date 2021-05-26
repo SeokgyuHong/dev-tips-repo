@@ -13,9 +13,7 @@
 장고에서 orm을 사용해 참조하는데 정참조의 경우 select_related를 사용해 참조할 수 있다. select_related를 사용할 경우 join쿼리로 변경해 쿼리가 나가고 결과물을 받아오는 구조다.
 그런데 이 select_related를 활용한 join은 필터링 조건에 따라 inner join과 outer join이 달라진다. 
 
-![image](https://user-images.githubusercontent.com/58390757/119596606-779ae880-be1a-11eb-96ea-30f3ec4a3d3a.png)
 
-![image](https://user-images.githubusercontent.com/58390757/119596638-884b5e80-be1a-11eb-8a0f-d70e5c4531fc.png)
 
 정참조 관계에서 해당객체가 참조하는 객체쪽에 조건을 걸어줘야 inner join으로 성립이된다. 필터조건을 잘못 건다면 졸업생들의 건강기록까지 한번에 조회하는경우가 생기기 때문에 조심하자..석규야
 
